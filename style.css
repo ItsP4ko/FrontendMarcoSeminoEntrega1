@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.barra-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fila-dos-columnas {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.fila-tres-columnas {
+    display: flex;
+    gap: 30px;
+}
+
+.columna-mitad {
+    flex: 1;
+}
+
+.seccion-ancho-completo-claro {
+    background-color: #f7f5f2;
+    padding: 80px 0;
+}
+
+.seccion-ancho-completo-primary {
+    background-color: #2e2a26;
+    color: #f0ede8;
+    padding: 80px 0;
+}
+
+.encabezado-fijo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #dddddd;
+    padding: 12px 0;
+    z-index: 10;
+}
+
+.logo-chico {
+    height: 45px;
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu-horizontal a {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.menu-horizontal a:hover {
+    color: #a08b5f;
+}
+
+.seccion-hero {
+    height: 100vh;
+    background-image: url("imagenes/fondo-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-grande {
+    width: 420px;
+}
+
+.logo-mediano {
+    width: 180px;
+    margin-bottom: 30px;
+}
+
+.logo-marca {
+    height: 90px;
+    margin: 20px;
+}
+
+.fila-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-grande {
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.titulo-seccion {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.subtitulo-claro {
+    font-size: 30px;
+    font-weight: normal;
+    color: #e8e2d6;
+    margin: 35px 0 15px 0;
+}
+
+.titulo-tarjeta {
+    font-size: 22px;
+    font-weight: normal;
+    margin: 15px 0 25px 0;
+}
+
+.espaciado-letras {
+    letter-spacing: 4px;
+}
+
+.texto-secundario {
+    font-size: 13px;
+    color: #999999;
+}
+
+.texto-angosto {
+    max-width: 750px;
+    margin: 0 auto 20px auto;
+    line-height: 1.7;
+}
+
+.texto-centrado {
+    text-align: center;
+}
+
+.columna-mitad p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.lista-simple {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.tarjeta {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #e5e0d8;
+    padding: 30px;
+    text-align: center;
+}
+
+.boton-borde {
+    display: inline-block;
+    border: 1px solid #a08b5f;
+    color: #a08b5f;
+    padding: 10px 25px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.boton-borde:hover {
+    background-color: #a08b5f;
+    color: #ffffff;
+}
+
+.link-claro {
+    color: #c9b98f;
+    text-decoration: underline;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.campo-formulario {
+    padding: 12px;
+    border: 1px solid #6b6459;
+    background-color: #3a352f;
+    color: #f0ede8;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.campo-alto {
+    height: 120px;
+    resize: vertical;
+}
+
+.pie-pagina {
+    background-color: #1f1c19;
+    padding: 25px 0;
+}
+
+@media (max-width: 800px) {
+    .fila-dos-columnas,
+    .fila-tres-columnas {
+        flex-direction: column;
+    }
+
+    .logo-grande {
+        width: 260px;
+    }
+
+    .menu-horizontal {
+        gap: 15px;
+    }
+}
